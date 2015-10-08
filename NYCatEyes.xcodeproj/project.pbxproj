@@ -9,11 +9,22 @@
 /* Begin PBXBuildFile section */
 		4A72E1781BC4B84E00C50CFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A72E1771BC4B84E00C50CFF /* main.m */; };
 		4A72E17B1BC4B84E00C50CFF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A72E17A1BC4B84E00C50CFF /* AppDelegate.m */; };
-		4A72E17E1BC4B84E00C50CFF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A72E17D1BC4B84E00C50CFF /* ViewController.m */; };
-		4A72E1811BC4B84E00C50CFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A72E17F1BC4B84E00C50CFF /* Main.storyboard */; };
 		4A72E1831BC4B84E00C50CFF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A72E1821BC4B84E00C50CFF /* Images.xcassets */; };
-		4A72E1861BC4B84E00C50CFF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A72E1841BC4B84E00C50CFF /* LaunchScreen.xib */; };
 		4A72E1921BC4B84E00C50CFF /* NYCatEyesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A72E1911BC4B84E00C50CFF /* NYCatEyesTests.m */; };
+		4A72E1AA1BC4BA7100C50CFF /* RootTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A72E1A81BC4BA7100C50CFF /* RootTabBarViewController.m */; };
+		4A72E1AB1BC4BA7100C50CFF /* RootTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A72E1A91BC4BA7100C50CFF /* RootTabBarViewController.xib */; };
+		4A72E1AE1BC4C05C00C50CFF /* CustomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A72E1AD1BC4C05C00C50CFF /* CustomeViewController.m */; };
+		4A72E1B11BC4C1A500C50CFF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A72E1B01BC4C1A500C50CFF /* BaseViewController.m */; };
+		4A72E1B51BC4CAB200C50CFF /* NYSegmentControll.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A72E1B41BC4CAB200C50CFF /* NYSegmentControll.m */; };
+		4A72E1B81BC50A7E00C50CFF /* NYSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A72E1B71BC50A7E00C50CFF /* NYSegmentViewController.m */; };
+		4A72E1C31BC50DBE00C50CFF /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A72E1BB1BC50DBE00C50CFF /* FirstViewController.m */; };
+		4A72E1C41BC50DBE00C50CFF /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A72E1BC1BC50DBE00C50CFF /* FirstViewController.xib */; };
+		4A72E1C51BC50DBE00C50CFF /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A72E1BE1BC50DBE00C50CFF /* SecondViewController.m */; };
+		4A72E1C61BC50DBE00C50CFF /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A72E1BF1BC50DBE00C50CFF /* SecondViewController.xib */; };
+		4A72E1C71BC50DBE00C50CFF /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A72E1C11BC50DBE00C50CFF /* ThirdViewController.m */; };
+		4A72E1C81BC50DBE00C50CFF /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A72E1C21BC50DBE00C50CFF /* ThirdViewController.xib */; };
+		4A72E1CE1BC51A5400C50CFF /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A72E1CC1BC51A5400C50CFF /* RootViewController.m */; };
+		4A72E1CF1BC51A5400C50CFF /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A72E1CD1BC51A5400C50CFF /* RootViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +43,33 @@
 		4A72E1771BC4B84E00C50CFF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4A72E1791BC4B84E00C50CFF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4A72E17A1BC4B84E00C50CFF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4A72E17C1BC4B84E00C50CFF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4A72E17D1BC4B84E00C50CFF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4A72E1801BC4B84E00C50CFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A72E1821BC4B84E00C50CFF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		4A72E1851BC4B84E00C50CFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4A72E18B1BC4B84E00C50CFF /* NYCatEyesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYCatEyesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A72E1901BC4B84E00C50CFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A72E1911BC4B84E00C50CFF /* NYCatEyesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYCatEyesTests.m; sourceTree = "<group>"; };
+		4A72E1A71BC4BA7100C50CFF /* RootTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTabBarViewController.h; sourceTree = "<group>"; };
+		4A72E1A81BC4BA7100C50CFF /* RootTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTabBarViewController.m; sourceTree = "<group>"; };
+		4A72E1A91BC4BA7100C50CFF /* RootTabBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootTabBarViewController.xib; sourceTree = "<group>"; };
+		4A72E1AC1BC4C05C00C50CFF /* CustomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomeViewController.h; sourceTree = "<group>"; };
+		4A72E1AD1BC4C05C00C50CFF /* CustomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomeViewController.m; sourceTree = "<group>"; };
+		4A72E1AF1BC4C1A500C50CFF /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		4A72E1B01BC4C1A500C50CFF /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		4A72E1B31BC4CAB200C50CFF /* NYSegmentControll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYSegmentControll.h; sourceTree = "<group>"; };
+		4A72E1B41BC4CAB200C50CFF /* NYSegmentControll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYSegmentControll.m; sourceTree = "<group>"; };
+		4A72E1B61BC50A7E00C50CFF /* NYSegmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYSegmentViewController.h; sourceTree = "<group>"; };
+		4A72E1B71BC50A7E00C50CFF /* NYSegmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYSegmentViewController.m; sourceTree = "<group>"; };
+		4A72E1BA1BC50DBE00C50CFF /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		4A72E1BB1BC50DBE00C50CFF /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		4A72E1BC1BC50DBE00C50CFF /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		4A72E1BD1BC50DBE00C50CFF /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		4A72E1BE1BC50DBE00C50CFF /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		4A72E1BF1BC50DBE00C50CFF /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		4A72E1C01BC50DBE00C50CFF /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		4A72E1C11BC50DBE00C50CFF /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		4A72E1C21BC50DBE00C50CFF /* ThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
+		4A72E1CB1BC51A5400C50CFF /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		4A72E1CC1BC51A5400C50CFF /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		4A72E1CD1BC51A5400C50CFF /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +113,11 @@
 			children = (
 				4A72E1791BC4B84E00C50CFF /* AppDelegate.h */,
 				4A72E17A1BC4B84E00C50CFF /* AppDelegate.m */,
-				4A72E17C1BC4B84E00C50CFF /* ViewController.h */,
-				4A72E17D1BC4B84E00C50CFF /* ViewController.m */,
-				4A72E17F1BC4B84E00C50CFF /* Main.storyboard */,
-				4A72E1821BC4B84E00C50CFF /* Images.xcassets */,
-				4A72E1841BC4B84E00C50CFF /* LaunchScreen.xib */,
+				4A72E1CB1BC51A5400C50CFF /* RootViewController.h */,
+				4A72E1CC1BC51A5400C50CFF /* RootViewController.m */,
+				4A72E1CD1BC51A5400C50CFF /* RootViewController.xib */,
+				4A72E1B91BC50DB200C50CFF /* Classes */,
+				4A72E1A61BC4BA7100C50CFF /* Controller */,
 				4A72E1751BC4B84E00C50CFF /* Supporting Files */,
 			);
 			path = NYCatEyes;
@@ -96,6 +126,8 @@
 		4A72E1751BC4B84E00C50CFF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4AA1CFD21BC6069B00C86824 /* image */,
+				4A72E1821BC4B84E00C50CFF /* Images.xcassets */,
 				4A72E1761BC4B84E00C50CFF /* Info.plist */,
 				4A72E1771BC4B84E00C50CFF /* main.m */,
 			);
@@ -117,6 +149,55 @@
 				4A72E1901BC4B84E00C50CFF /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4A72E1A61BC4BA7100C50CFF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A72E1A71BC4BA7100C50CFF /* RootTabBarViewController.h */,
+				4A72E1A81BC4BA7100C50CFF /* RootTabBarViewController.m */,
+				4A72E1A91BC4BA7100C50CFF /* RootTabBarViewController.xib */,
+				4A72E1AC1BC4C05C00C50CFF /* CustomeViewController.h */,
+				4A72E1AD1BC4C05C00C50CFF /* CustomeViewController.m */,
+				4A72E1AF1BC4C1A500C50CFF /* BaseViewController.h */,
+				4A72E1B01BC4C1A500C50CFF /* BaseViewController.m */,
+				4A72E1B21BC4C80300C50CFF /* NYSegmentControll */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4A72E1B21BC4C80300C50CFF /* NYSegmentControll */ = {
+			isa = PBXGroup;
+			children = (
+				4A72E1B31BC4CAB200C50CFF /* NYSegmentControll.h */,
+				4A72E1B41BC4CAB200C50CFF /* NYSegmentControll.m */,
+				4A72E1B61BC50A7E00C50CFF /* NYSegmentViewController.h */,
+				4A72E1B71BC50A7E00C50CFF /* NYSegmentViewController.m */,
+			);
+			path = NYSegmentControll;
+			sourceTree = "<group>";
+		};
+		4A72E1B91BC50DB200C50CFF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4A72E1BA1BC50DBE00C50CFF /* FirstViewController.h */,
+				4A72E1BB1BC50DBE00C50CFF /* FirstViewController.m */,
+				4A72E1BC1BC50DBE00C50CFF /* FirstViewController.xib */,
+				4A72E1BD1BC50DBE00C50CFF /* SecondViewController.h */,
+				4A72E1BE1BC50DBE00C50CFF /* SecondViewController.m */,
+				4A72E1BF1BC50DBE00C50CFF /* SecondViewController.xib */,
+				4A72E1C01BC50DBE00C50CFF /* ThirdViewController.h */,
+				4A72E1C11BC50DBE00C50CFF /* ThirdViewController.m */,
+				4A72E1C21BC50DBE00C50CFF /* ThirdViewController.xib */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4AA1CFD21BC6069B00C86824 /* image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +280,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A72E1811BC4B84E00C50CFF /* Main.storyboard in Resources */,
-				4A72E1861BC4B84E00C50CFF /* LaunchScreen.xib in Resources */,
+				4A72E1CF1BC51A5400C50CFF /* RootViewController.xib in Resources */,
+				4A72E1C81BC50DBE00C50CFF /* ThirdViewController.xib in Resources */,
+				4A72E1AB1BC4BA7100C50CFF /* RootTabBarViewController.xib in Resources */,
+				4A72E1C41BC50DBE00C50CFF /* FirstViewController.xib in Resources */,
+				4A72E1C61BC50DBE00C50CFF /* SecondViewController.xib in Resources */,
 				4A72E1831BC4B84E00C50CFF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,7 +303,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A72E17E1BC4B84E00C50CFF /* ViewController.m in Sources */,
+				4A72E1CE1BC51A5400C50CFF /* RootViewController.m in Sources */,
+				4A72E1C51BC50DBE00C50CFF /* SecondViewController.m in Sources */,
+				4A72E1AA1BC4BA7100C50CFF /* RootTabBarViewController.m in Sources */,
+				4A72E1C31BC50DBE00C50CFF /* FirstViewController.m in Sources */,
+				4A72E1B11BC4C1A500C50CFF /* BaseViewController.m in Sources */,
+				4A72E1AE1BC4C05C00C50CFF /* CustomeViewController.m in Sources */,
+				4A72E1C71BC50DBE00C50CFF /* ThirdViewController.m in Sources */,
+				4A72E1B51BC4CAB200C50CFF /* NYSegmentControll.m in Sources */,
+				4A72E1B81BC50A7E00C50CFF /* NYSegmentViewController.m in Sources */,
 				4A72E17B1BC4B84E00C50CFF /* AppDelegate.m in Sources */,
 				4A72E1781BC4B84E00C50CFF /* main.m in Sources */,
 			);
@@ -242,25 +334,6 @@
 			targetProxy = 4A72E18C1BC4B84E00C50CFF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		4A72E17F1BC4B84E00C50CFF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4A72E1801BC4B84E00C50CFF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4A72E1841BC4B84E00C50CFF /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4A72E1851BC4B84E00C50CFF /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4A72E1931BC4B84E00C50CFF /* Debug */ = {
@@ -347,7 +420,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = NYCatEyes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -357,7 +432,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = NYCatEyes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -416,6 +493,7 @@
 				4A72E1971BC4B84E00C50CFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A72E1981BC4B84E00C50CFF /* Build configuration list for PBXNativeTarget "NYCatEyesTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +502,7 @@
 				4A72E19A1BC4B84E00C50CFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface RootNavigationViewController : UINavigationController
+@interface RootViewController : UIViewController
 
 @end
