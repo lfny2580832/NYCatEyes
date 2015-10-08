@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  NYSegmentControll.h
 //  NYCatEyes
 //
 //  Created by 牛严 on 15/10/7.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface NYSegmentControll : UIView
 
 @end
-
