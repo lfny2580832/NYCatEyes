@@ -7,20 +7,27 @@
 //
 
 #import "AppDelegate.h"
-#import "RootViewController.h"
+#import "MovieViewController.h"
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-
+@synthesize rootTabBarViewController;
+- (RootTabBarViewController *)rootTabBarViewController
+{
+    if(nil == rootTabBarViewController)
+    {
+        NSArray *nibs = [[NSBundle mainBundle] loadNibNamed:@"RootTabBarViewController" owner:self options:nil];
+        rootTabBarViewController= [nibs lastObject];
+    }
+    return rootTabBarViewController;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window makeKeyAndVisible];
-    RootViewController *rootVC = [[RootViewController alloc] init];
-    UINavigationController *navCtr = [[UINavigationController alloc] initWithRootViewController:rootVC];
-    self.window.rootViewController = navCtr;
+    self.window.rootViewController = self.rootTabBarViewController;
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:208.0f/255 green:38.0f/255 blue:43.0f/255 alpha:1.0f]];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     return YES;

@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  ThirdViewController.h
 //  MaoYan
 //
 //  Created by 湛家荣 on 15/8/29.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface MovieThirdViewController : UIViewController
 
 @end

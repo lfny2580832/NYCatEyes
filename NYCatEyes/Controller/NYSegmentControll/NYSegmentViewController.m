@@ -24,7 +24,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    [self setLeftNaviItemWithTitle:@"苏州" size:12 imageName:nil];
     [self setupScrollView];
     [self setupViewControllers];
     [self setupSegmentControl];
@@ -54,8 +53,7 @@
 /** 设置子视图控制器，这个方法必须在viewDidLoad方法里执行，否则子视图控制器各项属性为空 */
 - (void)setupViewControllers
 {
-    int cnt = (int)self.viewControllerArray.count;
-    for (int i = 0; i < cnt; i++) {
+    for (int i = 0; i < self.viewControllerArray.count; i++) {
         UIViewController *vc = self.viewControllerArray[i];
         [self addChildViewController:vc];
         vc.view.frame = CGRectMake(vcWidth * i, 0, vcWidth, vcHeight);

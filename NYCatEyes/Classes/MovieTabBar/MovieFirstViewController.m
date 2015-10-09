@@ -6,13 +6,13 @@
 //  Copyright (c) 2015年 湛家荣. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "MovieFirstViewController.h"
 
-@interface FirstViewController ()
+@interface MovieFirstViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation MovieFirstViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

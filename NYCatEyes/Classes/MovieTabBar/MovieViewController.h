@@ -1,5 +1,5 @@
 //
-//  RootTabBarViewController.h
+//  RootNavigationViewController.h
 //  NYCatEyes
 //
 //  Created by 牛严 on 15/10/7.
@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface RootTabBarViewController : UITabBarController<UITabBarControllerDelegate>
+@interface MovieViewController : BaseViewController
 
 @end

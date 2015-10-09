@@ -6,13 +6,13 @@
 //  Copyright (c) 2015年 湛家荣. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "MovieSecondViewController.h"
 
-@interface SecondViewController ()
+@interface MovieSecondViewController ()
 
 @end
 
-@implementation SecondViewController
+@implementation MovieSecondViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
