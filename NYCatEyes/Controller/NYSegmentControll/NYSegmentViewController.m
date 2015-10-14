@@ -7,7 +7,7 @@
 //
 
 #import "NYSegmentViewController.h"
-
+#import "LocationViewController.h"
 @interface NYSegmentViewController ()<UIScrollViewDelegate,NYSegmentDelegate>
 {
     CGFloat vcWidth;  // 每个子视图控制器的视图的宽
@@ -21,12 +21,24 @@
 @implementation NYSegmentViewController
 
 #pragma mark UIViewController Methods
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.segmentBgColor = [UIColor colorWithRed:207.0f/255 green:37.0f/255 blue:42.0f/255 alpha:1.0f];
+    self.indicatorViewColor = [UIColor whiteColor];
     self.view.backgroundColor = [UIColor whiteColor];
     [self setupScrollView];
     [self setupViewControllers];
     [self setupSegmentControl];
+}
+
+#pragma mark 左右item代理方法
+- (void)leftItemTapped{
+
+}
+
+- (void)rightItemTapped{
+    
 }
 
 #pragma mark 启动方法

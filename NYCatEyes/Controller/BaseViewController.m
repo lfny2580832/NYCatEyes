@@ -7,6 +7,7 @@
 //
 
 #import "BaseViewController.h"
+#define ScreenWidth         [UIScreen mainScreen].bounds.size.width
 
 @interface BaseViewController ()
 
@@ -94,4 +95,14 @@
         self.navigationItem.rightBarButtonItem = rightItem;
     }
 }
+
+- (void)setNaviTitle:(NSString *)title size:(CGFloat)size
+{
+    UIButton *midButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    midButton.titleLabel.font = [UIFont systemFontOfSize:size];
+    [midButton setTitle:title forState:UIControlStateNormal];
+    midButton.frame = CGRectMake(0, 0, ScreenWidth, 40);
+    self.navigationItem.titleView = midButton;
+}
+
 @end

@@ -16,6 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setNaviTitle:@"影院" size:16];
+    [self setLeftNaviItemWithTitle:@"苏州 >" size:12 imageName:nil];
+    [self setRightNaviItemWithTitle:nil imageName:@"btn_search.png"];
 }
 
 

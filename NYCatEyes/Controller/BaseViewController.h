@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "CustomeViewController.h"
 @interface BaseViewController : UIViewController
 - (void)leftItemTapped;
 - (void)rightItemTapped;
@@ -15,5 +15,6 @@
 - (void)setLeftNaviItemWithTitle:(NSString *)title imageName:(NSString *)imageName;
 - (void)setRightNaviItemWithTitle:(NSString *)title imageName:(NSString *)imageName;
 - (void)setLeftNaviItemWithTitle:(NSString *)title size:(CGFloat)size imageName:(NSString *)imageName;
+- (void)setNaviTitle:(NSString *)title size:(CGFloat)size;
 
 @end

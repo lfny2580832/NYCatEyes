@@ -7,27 +7,63 @@
 //
 
 #import "AppDelegate.h"
-#import "MovieViewController.h"
-@interface AppDelegate ()
+#import "CustomeViewController.h"
+#import "MovieFirstViewController.h"
+#import "MovieSecondViewController.h"
+#import "MovieThirdViewController.h"
+#import "TheaterViewController.h"
+#import "FoundViewController.h"
+#import "MineViewController.h"
+#import "LocationViewController.h"
+#import "NYSegmentViewController.h"
 
+@interface AppDelegate ()
 @end
 
 @implementation AppDelegate
 @synthesize rootTabBarViewController;
-- (RootTabBarViewController *)rootTabBarViewController
-{
-    if(nil == rootTabBarViewController)
-    {
-        NSArray *nibs = [[NSBundle mainBundle] loadNibNamed:@"RootTabBarViewController" owner:self options:nil];
-        rootTabBarViewController= [nibs lastObject];
-    }
-    return rootTabBarViewController;
+
+- (void)loadSubViewControllers{
+    NYSegmentViewController *movieController = [[NYSegmentViewController alloc]init];
+    [movieController setLeftNaviItemWithTitle:@"苏州 >" size:12 imageName:nil];
+    [movieController setRightNaviItemWithTitle:nil imageName:@"btn_search.png"];
+    MovieFirstViewController *firstVC = [[MovieFirstViewController alloc] init];
+    MovieSecondViewController *secondVC = [[MovieSecondViewController alloc] init];
+    MovieThirdViewController *thirdVC = [[MovieThirdViewController alloc] init];
+    [movieController setViewControllerArray:@[firstVC, secondVC, thirdVC]];
+    [movieController setTitleArray:@[@"热映", @"待映", @"影库"]];
+    movieController.tabBarItem.title = @"电影";
+    movieController.tabBarItem.image = [UIImage imageNamed:@"icon_movie"];
+    
+    
+    TheaterViewController *theaterViewController = [[TheaterViewController alloc]initWithNibName:@"TheaterViewController" bundle:nil];
+    theaterViewController.tabBarItem.title = @"影院";
+    theaterViewController.tabBarItem.image = [UIImage imageNamed:@"icon_theater"];
+    
+    
+    FoundViewController *foundViewController = [[FoundViewController alloc]initWithNibName:@"FoundViewController" bundle:nil];
+    foundViewController.tabBarItem.title = @"发现";
+    foundViewController.tabBarItem.image = [UIImage imageNamed:@"icon_found"];
+    
+    
+    MineViewController *mineViewController = [[MineViewController alloc]initWithNibName:@"MineViewController" bundle:nil];
+    mineViewController.tabBarItem.title = @"我的";
+    mineViewController.tabBarItem.image = [UIImage imageNamed:@"icon_mine"];
+    
+    UINavigationController *vc1 = [[UINavigationController alloc]initWithRootViewController:movieController];
+    UINavigationController *vc2 = [[UINavigationController alloc]initWithRootViewController:theaterViewController];
+    UINavigationController *vc3 = [[UINavigationController alloc]initWithRootViewController:foundViewController];
+    UINavigationController *vc4 = [[UINavigationController alloc]initWithRootViewController:mineViewController];
+    
+    self.rootTabBarViewController.viewControllers = [[NSArray alloc]initWithObjects:vc1,vc2,vc3,vc4, nil];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    [self.window makeKeyAndVisible];
+    rootTabBarViewController= [[RootTabBarViewController alloc]init];
+    [self loadSubViewControllers];
     self.window.rootViewController = self.rootTabBarViewController;
+    [self.window makeKeyAndVisible];
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:208.0f/255 green:38.0f/255 blue:43.0f/255 alpha:1.0f]];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     return YES;

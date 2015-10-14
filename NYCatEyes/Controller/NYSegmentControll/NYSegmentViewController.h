@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "NYSegmentControll.h"
 #import "BaseViewController.h"
+
 @interface NYSegmentViewController : BaseViewController
 
 @property (nonatomic, copy) NSArray *viewControllerArray;
@@ -23,3 +24,6 @@
 /** segment每一项的高 */
 @property (nonatomic, assign) CGFloat itemHeight;
 @end
+
+
+

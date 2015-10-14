@@ -7,6 +7,7 @@
 //
 
 #import "MovieFirstViewController.h"
+#import "AESCrypt.h"
 
 @interface MovieFirstViewController ()
 
@@ -16,8 +17,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self testAesCrpt];
     
 }
 
+- (void)testAesCrpt{
+    NSString *name = @"牛严";
+    name = [AESCrypt encrypt:name password:@"shit"];
+    NSLog(@"加密后：%@",name);
+    name = [AESCrypt decrypt:name password:@"shit"];
+    NSLog(@"解密后: %@",name);
+}
 
 @end
