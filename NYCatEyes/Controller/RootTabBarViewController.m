@@ -21,7 +21,9 @@
 @interface RootTabBarViewController ()
 @property (strong, nonatomic) CustomeViewController *locationNavController;
 @property (strong, nonatomic) NYSegmentViewController *movieController;
+@property (strong, nonatomic) TheaterViewController *theaterViewController;
 @property (strong, nonatomic) NYSegmentViewController *foundController;
+@property (strong, nonatomic) MineViewController *mineViewController;
 @end
 
 @implementation RootTabBarViewController
@@ -53,6 +55,15 @@
     return _movieController;
 }
 
+- (TheaterViewController *)theaterViewController{
+    if (nil == _theaterViewController) {
+        _theaterViewController = [[TheaterViewController alloc]initWithNibName:@"TheaterViewController" bundle:nil];
+        _theaterViewController.tabBarItem.title = @"影院";
+        _theaterViewController.tabBarItem.image = [UIImage imageNamed:@"icon_theater"];
+    }
+    return _theaterViewController;
+}
+
 - (NYSegmentViewController *)foundController{
     if (nil == _foundController) {
         _foundController = [[NYSegmentViewController alloc]init];
@@ -67,22 +78,22 @@
     }
     return _foundController;
 }
+
+- (MineViewController *)mineViewController{
+    if (nil == _mineViewController) {
+        _mineViewController = [[MineViewController alloc]initWithNibName:@"MineViewController" bundle:nil];
+        _mineViewController.tabBarItem.title = @"我的";
+        _mineViewController.tabBarItem.image = [UIImage imageNamed:@"icon_mine"];
+    }
+    return _mineViewController;
+}
+
 - (void)loadSubViewControllers{
-  
-    TheaterViewController *theaterViewController = [[TheaterViewController alloc]initWithNibName:@"TheaterViewController" bundle:nil];
-    theaterViewController.tabBarItem.title = @"影院";
-    theaterViewController.tabBarItem.image = [UIImage imageNamed:@"icon_theater"];
-    
-    
-    MineViewController *mineViewController = [[MineViewController alloc]initWithNibName:@"MineViewController" bundle:nil];
-    mineViewController.tabBarItem.title = @"我的";
-    mineViewController.tabBarItem.image = [UIImage imageNamed:@"icon_mine"];
-    
     //懒加载需要用点方法实现取方法
     UINavigationController *vc1 = [[UINavigationController alloc]initWithRootViewController:self.movieController];
-    UINavigationController *vc2 = [[UINavigationController alloc]initWithRootViewController:theaterViewController];
+    UINavigationController *vc2 = [[UINavigationController alloc]initWithRootViewController:self.theaterViewController];
     UINavigationController *vc3 = [[UINavigationController alloc]initWithRootViewController:self.foundController];
-    UINavigationController *vc4 = [[UINavigationController alloc]initWithRootViewController:mineViewController];
+    UINavigationController *vc4 = [[UINavigationController alloc]initWithRootViewController:self.mineViewController];
     
     self.viewControllers = @[vc1,vc2,vc3,vc4];
 }
@@ -102,24 +113,6 @@
     self.tabBar.barTintColor = [UIColor whiteColor];
     self.delegate = self;
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(showLocationViewWithNotification:) name:@"PresentLocationViewController" object:nil];
-}
-
-#pragma mark - TabBarrController Delegate
-- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController
-{
-    if ([viewController isKindOfClass:[UINavigationController class]])
-    {
-        UINavigationController *naviController = (UINavigationController *)viewController;
-        id vc = [naviController topViewController];
-
-        if ([vc isKindOfClass:[TheaterViewController class]]) {
-            
-        }
-        else if([vc isKindOfClass:[MineViewController class]]){
-            
-        }
-    }
-    return YES;
 }
 
 @end
