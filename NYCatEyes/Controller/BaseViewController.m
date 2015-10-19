@@ -101,7 +101,7 @@
     UIButton *midButton = [UIButton buttonWithType:UIButtonTypeCustom];
     midButton.titleLabel.font = [UIFont systemFontOfSize:size];
     [midButton setTitle:title forState:UIControlStateNormal];
-    midButton.frame = CGRectMake(0, 0, ScreenWidth, 40);
+    midButton.frame = CGRectMake(0, 0, 100, 40);
     self.navigationItem.titleView = midButton;
 }
 

@@ -37,14 +37,16 @@
 		4AA1CFEA1BC653E800C86824 /* MovieThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AA1CFE41BC653E800C86824 /* MovieThirdViewController.xib */; };
 		4AA1CFF61BC6613900C86824 /* TheaterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA1CFF41BC6613900C86824 /* TheaterViewController.m */; };
 		4AA1CFF71BC6613900C86824 /* TheaterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AA1CFF51BC6613900C86824 /* TheaterViewController.xib */; };
-		4AA1CFFB1BC6626B00C86824 /* FoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA1CFF91BC6626B00C86824 /* FoundViewController.m */; };
-		4AA1CFFC1BC6626B00C86824 /* FoundViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AA1CFFA1BC6626B00C86824 /* FoundViewController.xib */; };
 		4AAD6F271BC7797800141F74 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAD6F251BC7797800141F74 /* LocationViewController.m */; };
 		4AAD6F281BC7797800141F74 /* LocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AAD6F261BC7797800141F74 /* LocationViewController.xib */; };
 		4AE9BF6C1BCE2A6000B26FF7 /* AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9BF621BCE2A6000B26FF7 /* AESCrypt.m */; };
 		4AE9BF6E1BCE2A6000B26FF7 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9BF651BCE2A6000B26FF7 /* NSData+Base64.m */; };
 		4AE9BF6F1BCE2A6000B26FF7 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9BF671BCE2A6000B26FF7 /* NSData+CommonCrypto.m */; };
 		4AE9BF701BCE2A6000B26FF7 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9BF691BCE2A6000B26FF7 /* NSString+Base64.m */; };
+		4AE9BF751BCE845B00B26FF7 /* FoundFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9BF731BCE845B00B26FF7 /* FoundFirstViewController.m */; };
+		4AE9BF761BCE845B00B26FF7 /* FoundFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE9BF741BCE845B00B26FF7 /* FoundFirstViewController.xib */; };
+		4AE9BF7A1BCE846D00B26FF7 /* FoundSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9BF781BCE846D00B26FF7 /* FoundSecondViewController.m */; };
+		4AE9BF7B1BCE846D00B26FF7 /* FoundSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE9BF791BCE846D00B26FF7 /* FoundSecondViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,9 +105,6 @@
 		4AA1CFF31BC6613900C86824 /* TheaterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheaterViewController.h; sourceTree = "<group>"; };
 		4AA1CFF41BC6613900C86824 /* TheaterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheaterViewController.m; sourceTree = "<group>"; };
 		4AA1CFF51BC6613900C86824 /* TheaterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TheaterViewController.xib; sourceTree = "<group>"; };
-		4AA1CFF81BC6626B00C86824 /* FoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundViewController.h; sourceTree = "<group>"; };
-		4AA1CFF91BC6626B00C86824 /* FoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoundViewController.m; sourceTree = "<group>"; };
-		4AA1CFFA1BC6626B00C86824 /* FoundViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoundViewController.xib; sourceTree = "<group>"; };
 		4AAD6F241BC7797800141F74 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
 		4AAD6F251BC7797800141F74 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
 		4AAD6F261BC7797800141F74 /* LocationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationViewController.xib; sourceTree = "<group>"; };
@@ -117,6 +116,12 @@
 		4AE9BF671BCE2A6000B26FF7 /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
 		4AE9BF681BCE2A6000B26FF7 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
 		4AE9BF691BCE2A6000B26FF7 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		4AE9BF721BCE845B00B26FF7 /* FoundFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundFirstViewController.h; sourceTree = "<group>"; };
+		4AE9BF731BCE845B00B26FF7 /* FoundFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoundFirstViewController.m; sourceTree = "<group>"; };
+		4AE9BF741BCE845B00B26FF7 /* FoundFirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoundFirstViewController.xib; sourceTree = "<group>"; };
+		4AE9BF771BCE846D00B26FF7 /* FoundSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundSecondViewController.h; sourceTree = "<group>"; };
+		4AE9BF781BCE846D00B26FF7 /* FoundSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoundSecondViewController.m; sourceTree = "<group>"; };
+		4AE9BF791BCE846D00B26FF7 /* FoundSecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoundSecondViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,9 +275,12 @@
 		4AA1CFEB1BC6542200C86824 /* FoundTabBar */ = {
 			isa = PBXGroup;
 			children = (
-				4AA1CFF81BC6626B00C86824 /* FoundViewController.h */,
-				4AA1CFF91BC6626B00C86824 /* FoundViewController.m */,
-				4AA1CFFA1BC6626B00C86824 /* FoundViewController.xib */,
+				4AE9BF721BCE845B00B26FF7 /* FoundFirstViewController.h */,
+				4AE9BF731BCE845B00B26FF7 /* FoundFirstViewController.m */,
+				4AE9BF741BCE845B00B26FF7 /* FoundFirstViewController.xib */,
+				4AE9BF771BCE846D00B26FF7 /* FoundSecondViewController.h */,
+				4AE9BF781BCE846D00B26FF7 /* FoundSecondViewController.m */,
+				4AE9BF791BCE846D00B26FF7 /* FoundSecondViewController.xib */,
 			);
 			path = FoundTabBar;
 			sourceTree = "<group>";
@@ -410,9 +418,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AE9BF761BCE845B00B26FF7 /* FoundFirstViewController.xib in Resources */,
 				4A7B5CDD1BC6CD9300EB4AFA /* icon_mine@2x.png in Resources */,
 				4A7B5CDC1BC6CD9300EB4AFA /* icon_found@2x.png in Resources */,
 				4A7B5CDF1BC6CD9300EB4AFA /* icon_theater@2x.png in Resources */,
+				4AE9BF7B1BCE846D00B26FF7 /* FoundSecondViewController.xib in Resources */,
 				4AA1CFE61BC653E800C86824 /* MovieFirstViewController.xib in Resources */,
 				4AA1CFE81BC653E800C86824 /* MovieSecondViewController.xib in Resources */,
 				4A9BE5721BCAA3AB00FD182B /* icon_header_back@2x.png in Resources */,
@@ -420,7 +430,6 @@
 				4A7B5CD71BC6C26A00EB4AFA /* MineViewController.xib in Resources */,
 				4A7B5CE61BC6D08300EB4AFA /* icon_movie_selected@2x.png in Resources */,
 				4A7B5CDE1BC6CD9300EB4AFA /* icon_movie@2x.png in Resources */,
-				4AA1CFFC1BC6626B00C86824 /* FoundViewController.xib in Resources */,
 				4AAD6F281BC7797800141F74 /* LocationViewController.xib in Resources */,
 				4AA1CFF71BC6613900C86824 /* TheaterViewController.xib in Resources */,
 				4A7B5CE51BC6D08300EB4AFA /* icon_mine_selected@2x.png in Resources */,
@@ -447,9 +456,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AE9BF6C1BCE2A6000B26FF7 /* AESCrypt.m in Sources */,
+				4AE9BF7A1BCE846D00B26FF7 /* FoundSecondViewController.m in Sources */,
 				4AE9BF6F1BCE2A6000B26FF7 /* NSData+CommonCrypto.m in Sources */,
 				4A7B5CD61BC6C26A00EB4AFA /* MineViewController.m in Sources */,
 				4A72E1AA1BC4BA7100C50CFF /* RootTabBarViewController.m in Sources */,
+				4AE9BF751BCE845B00B26FF7 /* FoundFirstViewController.m in Sources */,
 				4AE9BF6E1BCE2A6000B26FF7 /* NSData+Base64.m in Sources */,
 				4AA1CFF61BC6613900C86824 /* TheaterViewController.m in Sources */,
 				4AAD6F271BC7797800141F74 /* LocationViewController.m in Sources */,
@@ -460,7 +471,6 @@
 				4A72E1B51BC4CAB200C50CFF /* NYSegmentControll.m in Sources */,
 				4A72E1B81BC50A7E00C50CFF /* NYSegmentViewController.m in Sources */,
 				4A72E17B1BC4B84E00C50CFF /* AppDelegate.m in Sources */,
-				4AA1CFFB1BC6626B00C86824 /* FoundViewController.m in Sources */,
 				4A72E1781BC4B84E00C50CFF /* main.m in Sources */,
 				4AA1CFE91BC653E800C86824 /* MovieThirdViewController.m in Sources */,
 				4AA1CFE71BC653E800C86824 /* MovieSecondViewController.m in Sources */,

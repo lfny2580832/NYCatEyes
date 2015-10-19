@@ -34,11 +34,20 @@
 
 #pragma mark 左右item代理方法
 - (void)leftItemTapped{
-
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"PresentLocationViewController" object:nil];
 }
 
 - (void)rightItemTapped{
     
+}
+
+#pragma mark Set方法
+- (CGFloat)itemWidth
+{
+    if (_itemWidth == 0) {
+        _itemWidth = 50.0f;
+    }
+    return _itemWidth;
 }
 
 #pragma mark 启动方法
@@ -76,7 +85,7 @@
 /** 设置segment */
 - (void)setupSegmentControl
 {
-    segment = [[NYSegmentControll alloc] initWithFrame:CGRectMake(0, 0, 50 * self.viewControllerArray.count, 25) titles:self.titleArray];
+    segment = [[NYSegmentControll alloc] initWithFrame:CGRectMake(0, 0, self.itemWidth * self.viewControllerArray.count, 25) titles:self.titleArray];
     segment.backgroundColor = self.segmentBgColor;
     segment.indicatorViewColor = self.indicatorViewColor;
     segment.delegate = self;

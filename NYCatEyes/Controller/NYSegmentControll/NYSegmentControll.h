@@ -13,6 +13,8 @@
 @interface NYSegmentControll : UIView
 @property (nonatomic, strong) UIColor *indicatorViewColor;
 @property (assign, nonatomic) id<NYSegmentDelegate> delegate;
+
+
 - (instancetype)initWithFrame:(CGRect)frame titles:(NSArray *)titleArray;
 
 /** 设置segment的索引为index的按钮处于选中状态 */

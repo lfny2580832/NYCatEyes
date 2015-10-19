@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FoundViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FoundSecondViewController">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -13,8 +13,8 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="0.73701896560893676" green="1" blue="0.65422842385593949" alpha="1" colorSpace="calibratedRGB"/>
-            <point key="canvasLocation" x="179" y="622"/>
+            <color key="backgroundColor" red="1" green="0.73360741257057827" blue="0.90073853441850937" alpha="1" colorSpace="calibratedRGB"/>
+            <point key="canvasLocation" x="331" y="328"/>
         </view>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
