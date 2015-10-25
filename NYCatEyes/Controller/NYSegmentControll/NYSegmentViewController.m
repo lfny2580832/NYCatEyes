@@ -41,7 +41,7 @@
     
 }
 
-#pragma mark Set方法
+#pragma mark Get方法
 - (CGFloat)itemWidth
 {
     if (_itemWidth == 0) {
@@ -65,7 +65,9 @@
     scrollView.contentSize = CGSizeMake(vcWidth * self.viewControllerArray.count, vcHeight);
     scrollView.showsHorizontalScrollIndicator = NO;
     scrollView.showsVerticalScrollIndicator   = NO;
-    scrollView.pagingEnabled = YES;
+    //该属性设置为yes，可支持滑动换页
+    scrollView.scrollEnabled = NO;
+    scrollView.pagingEnabled  = YES;
     scrollView.delegate      = self;
     [self.view addSubview:scrollView];
     self.scrollView = scrollView;
@@ -105,13 +107,14 @@
 - (void)segmentControl:(NYSegmentControll *)segment didSelectedIndex:(NSInteger)index
 {
     CGPoint offset = CGPointMake(vcWidth * index, 0);
-    [self.scrollView setContentOffset:offset animated:YES];
-}
-
-- (void)segmentControl:(NYSegmentControll *)segment didScrolledPersent:(CGFloat)persent
-{
-    CGPoint offset = CGPointMake(persent * self.scrollView.contentSize.width, 0);
     [self.scrollView setContentOffset:offset animated:NO];
 }
+
+// 该方法支持页面切换动画
+//- (void)segmentControl:(NYSegmentControll *)segment didScrolledPersent:(CGFloat)persent
+//{
+//    CGPoint offset = CGPointMake(persent * self.scrollView.contentSize.width, 0);
+//    [self.scrollView setContentOffset:offset animated:NO];
+//}
 
 @end

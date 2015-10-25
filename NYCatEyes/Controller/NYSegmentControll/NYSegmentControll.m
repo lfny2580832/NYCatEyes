@@ -146,15 +146,17 @@
 #pragma mark 设置选中按钮
 - (void)setSelectedIndex:(NSInteger)index{
     // 告诉代理选中了哪个按钮
-    if ([self.delegate respondsToSelector:@selector(segmentControl:didSelectedIndex:)]) {
-        [self.delegate segmentControl:self didSelectedIndex:index];
-    }
+
     [self selecteBegan]; // 选中开始的设置
     self.currentBtn = self.buttonArray[index];
     [UIView animateWithDuration:0.25f animations:^{
         self.indicatorView.frame = CGRectMake(self.btnWidth * index, 0, self.indicatorView.frame.size.width, self.indicatorView.frame.size.height);
     } completion:^(BOOL finished) {
         [self selectEnd]; // 选中结束的设置
+        //该方法为模拟
+        if ([self.delegate respondsToSelector:@selector(segmentControl:didSelectedIndex:)]) {
+            [self.delegate segmentControl:self didSelectedIndex:index];
+        }
     }];
 }
 
