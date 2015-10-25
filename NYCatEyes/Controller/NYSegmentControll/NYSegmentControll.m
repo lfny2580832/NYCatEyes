@@ -146,7 +146,6 @@
 #pragma mark 设置选中按钮
 - (void)setSelectedIndex:(NSInteger)index{
     // 告诉代理选中了哪个按钮
-
     [self selecteBegan]; // 选中开始的设置
     self.currentBtn = self.buttonArray[index];
     [UIView animateWithDuration:0.25f animations:^{
